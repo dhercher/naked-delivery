@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>Naked Delivery - {{ title }}</title>
+    {% else %}
+    <title>Welcome to Naked Delivery</title>
+    {% endif %}
+  </head>
+  <body>
+    <div><a href="/">Naked Delivery</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
